@@ -1,9 +1,9 @@
-import { Component, Prop, h } from '@stencil/core';
-import { format } from '../../utils/utils';
+import { Component, Prop, h } from "@stencil/core";
+import { format } from "../../utils/utils";
 
 @Component({
-  tag: 'ext-component',
-  styleUrl: 'ext-component.css',
+  tag: "ext-component",
+  styleUrl: "ext-component.css",
   shadow: true,
 })
 export class MyComponent {
@@ -27,6 +27,6 @@ export class MyComponent {
   }
 
   render() {
-    return <div>Hello, World! I'm {this.getText()}</div>;
+    return <div>EXTERNAL COMPONENT: I'm {this.getText()}</div>;
   }
 }

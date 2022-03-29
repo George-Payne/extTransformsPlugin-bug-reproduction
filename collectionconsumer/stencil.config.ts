@@ -1,5 +1,4 @@
 import { Config } from "@stencil/core";
-// import { postcss } from '@stencil/postcss';
 
 export const config: Config = {
   namespace: "collectionconsumer",
@@ -7,6 +6,10 @@ export const config: Config = {
     {
       type: "dist",
       esmLoaderPath: "./loader",
+    },
+    {
+      type: "www",
+      serviceWorker: null,
     },
   ],
   plugins: [],
