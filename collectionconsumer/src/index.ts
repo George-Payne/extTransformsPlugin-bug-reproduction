@@ -1,2 +1,1 @@
-export { Components, JSX } from './components';
-import 'externalcollection';
+export { Components, JSX } from "./components";
